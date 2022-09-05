@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --green-hospital: #47cfac
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+header{
+    height: 200px;
+}
+
+
+
+header nav{
+    display: flex;
+    header: 75px;
+    background-color: var(--green-hospital);
+    justify-content: flex-end;
+}
