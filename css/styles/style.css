@@ -6,10 +6,11 @@
 
 html{
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 :root{
-    --green-hospital: #47cfac
+    --green-hospital: #47cfac;
 }
 
 a{
@@ -25,14 +26,79 @@ body{
 }
 
 header{
-    height: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 
 
-header nav{
+.header__nav{
     display: flex;
-    header: 75px;
+    height: 50px;
     background-color: var(--green-hospital);
     justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__nav a{
+    display: block;
+    height: auto;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-small{
+    width: 20%;
+    min-width: 200px;
+}
+
+.logo-small img{
+    width: 100%;
+}
+
+main{
+    display: grid;
+    place-items: start center;
+    height: 100%;
+    background-image: url("../../assets/img/Cover.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 50%;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main__container h1{
+    font-size: 2.6rem;
+    text-align: justify;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.main__container button{
+    width: 100px;
+    height: 50px;
+    background-color: var(--green-hospital);
+    font-weight: 800;
+    border: 1px solid white;
+    cursor: pointer;
 }
