@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 html{
     font-size: 62.5%;
-    font-family: sans-serif;
+    font-family: 'Roboto', monospace;
 }
 
 :root{
@@ -30,9 +32,7 @@ header{
     grid-template-rows: auto 1fr;
 }
 
-
-
-.header__nav{
+nav{
     display: flex;
     height: 50px;
     background-color: var(--green-hospital);
@@ -41,7 +41,7 @@ header{
     padding: 0 20px;
 }
 
-.header__nav a{
+.nav__item{
     display: block;
     height: auto;
 }
@@ -54,8 +54,12 @@ header{
     font-size: 1.4rem;
     font-family: sans-serif;
     font-weight: bold;
-    text-decoration: none;
+}
+
+.header__about-me{
+    font: bold 1.4rem;
     color: black;
+    text-decoration: none;
 }
 
 .logo-small{
@@ -63,20 +67,19 @@ header{
     min-width: 200px;
 }
 
-.logo-small img{
+.logo-small__img{
     width: 100%;
 }
 
-main{
+.home-main{
     display: grid;
     place-items: center;
     height: 100%;
-    background-image: url("../../assets/img/Cover.png");
+    background: url("../../assets/img/Cover.png") no-repeat center;
     background-size: cover;
-    background-position: center;
 }
 
-.main__container{
+.home-main__container{
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -86,14 +89,14 @@ main{
     padding-bottom: 150px;
 }
 
-.main__container h1{
+.home-main__title{
     font-size: 2.6rem;
     text-align: justify;
     color: white;
     margin-bottom: 80px;
 }
 
-.main__container button{
+.home-main__button{
     width: 100px;
     height: 50px;
     background-color: var(--green-hospital);
