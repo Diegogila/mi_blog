@@ -19,6 +19,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 .index-body{
     position: fixed;
     top:0;
@@ -109,3 +113,26 @@ footer{
     height: 50px;
     background-color: var(--green-hospital);
 }
+
+/*-----------------------BLOGS--------------------------*/
+
+.blogs{
+    min-height: 60vh;
+}
+
+.news{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #e6e9ee;
+}
+
+.news__container{
+    height: 300px;
+
+}
+
+.news__image{
+    width: auto;
+}
+
