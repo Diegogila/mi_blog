@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 
-body{
+.index-body{
     position: fixed;
     top:0;
     bottom: 0;
@@ -103,4 +103,9 @@ nav{
     font-weight: 800;
     border: 1px solid white;
     cursor: pointer;
+}
+
+footer{
+    height: 50px;
+    background-color: var(--green-hospital);
 }
